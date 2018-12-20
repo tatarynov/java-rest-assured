@@ -33,7 +33,7 @@ Default value: svc/mostpopular/
 Default value: INFO
 
 ### Source code
-Source code (git repo) is available at ```https://tatarynov@bitbucket.org/tatarynov/nyt-tests.git```
+Source code (git repo) is available at ```https://github.com/tatarynov/java-rest-assured```
 
 
 ### Assumptions
@@ -60,7 +60,7 @@ cd PROJECT_DIR
 ```
 or with parameters:
 ```
-./gradlew test -Dversion=v2 -Dserver.host=localhost
+./gradlew test -Dserver.base=svc/mostpopular/v2 -Dserver.host=localhost
 ```
 
 ###### For Windows platform:
@@ -69,10 +69,8 @@ gradle test
 ```
 or with parameters:
 ```
-gradlew test -Dversion=v2 -Dserver.host=localhost
+gradlew test -Dserver.base=svc/mostpopular/v2 -Dserver.host=localhost
 ```
 
 ## Reports and logs
-
-
 A HTML report will be generated in ```~/report``` directory.
